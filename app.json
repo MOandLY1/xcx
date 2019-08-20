@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/small_procedures/small_procedures",
+    "pages/color/color",
+    "pages/zhihu/zhihu",
+    "pages/today_in_history/today_in_history",
+    "pages/picture/picture",
+    "pages/music/music",
+    "pages/mathematics/mathematics",
+    "pages/Github_Trending/Github_Trending",
+    "pages/chemistry/chemistry"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "标题",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

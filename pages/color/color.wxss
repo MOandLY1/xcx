@@ -1,0 +1,52 @@
+/**index.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+.fl{
+    float: left;
+}
+.userinfo-nickname {
+    color: #aaa;
+}
+
+page {
+    background: #006D4F;
+}
+.main{
+    height:280px;
+}
+.centent{
+    width: 116px;
+    height: 53px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    background: #006D4F;
+    color:#F4EDA2;
+    line-height: 53px;
+}
+.centent_{
+    width: 116px;
+    height: 53px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    background: #F4EDA2;
+    color:#006D4F;
+    line-height: 53px;
+}
+.floot{
+    height: 50px;
+    width: 100%;
+}
+.footer{
+    text-align: center;
+}

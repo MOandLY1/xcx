@@ -1,0 +1,41 @@
+/**index.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+page {
+    background: #06AED5;
+}
+.main{
+    height:280px;
+    color: #B8DDD1;
+}
+.centent{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 17px;
+}
+.centent_{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.floot{
+    height: 50px;
+    width: 100%;
+}
+.footer{
+    text-align: center;
+}

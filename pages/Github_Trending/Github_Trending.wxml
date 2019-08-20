@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view bindtouchstart='touchStart' bindtouchend="touchEnd" class="container">
+
+    <view class="usermotto">
+        <view class="centent">Github_Trending</view>
+        <view class="centent_"></view>
+        <button class="footer"  bindtap="z"> 跳转页面 </button>
+    </view>
+</view>

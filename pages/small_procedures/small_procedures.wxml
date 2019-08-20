@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view bindtouchstart='touchStart' bindtouchend="touchEnd" class="container">
+
+    <view class="main">
+        <view class="centent">{{list.comment_content}}</view>
+        <view class="centent_">{{list.comment_nickname}}</view>
+        <view class="centent_">《{{list.album}}》--{{list.author}}</view>
+    </view>
+    <view class="floot">
+        <button class="footer"  bindtap="z"> 跳转页面 </button>
+    </view>
+</view>
