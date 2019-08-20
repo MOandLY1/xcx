@@ -39,7 +39,7 @@ Page({
 
   z:function(){
     wx.navigateTo({
-      url: '../picture/picture'
+      url: '../logs/logs'
     })
   },
   touchStart(e) {
