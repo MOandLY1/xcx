@@ -5,8 +5,5 @@
         <view class="centent fl">{{list.color_one}}</view>
         <view class="centent_ fl">{{list.color_two}}</view>
     </view>
-    <view class="floot">
-        <button class="footer"  bindtap="z"> 跳转页面 </button>
-    </view>
 </view>
 

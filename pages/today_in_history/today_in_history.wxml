@@ -5,7 +5,4 @@
         <view class="centent">{{list_}}</view>
         <view class="centent_">——{{list.day}}</view>
     </view>
-    <view class="floot">
-        <button class="footer"  bindtap="z"> 跳转页面 </button>
-    </view>
 </view>

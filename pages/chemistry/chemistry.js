@@ -47,7 +47,7 @@ Page({
             url: '../today_in_history/today_in_history'
         })
     },
-    
+
     touchStart(e) {
         // console.log(e)
         this.setData({

@@ -5,7 +5,4 @@
     <view class="centent">{{list.hitokoto}}</view>
     <view class="centent_">——{{list.from}}</view>
   </view>
-  <view class="floot">
-    <button class="footer"  bindtap="z"> 跳转页面 </button>
-  </view>
 </view>
