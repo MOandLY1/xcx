@@ -46,6 +46,11 @@ Page({
             url: '../zhihu/zhihu'
         })
     },
+    x:function(){
+        wx.navigateTo({
+            url: '../small_procedures/small_procedures'
+        })
+    },
     touchStart(e) {
         // console.log(e)
         this.setData({
@@ -56,18 +61,29 @@ Page({
     touchEnd(e) {
         let x = e.changedTouches[0].clientX;
         let y = e.changedTouches[0].clientY;
+        let a = this.touch(x,y);
+        if(a=='right'){
+            this.x();
+        }
+
+        if(a=='left'){
+            this.z();
+        }
+
     },
-    // const getTouchData = (endX, endY, startX, startY)=> {
-    //   let turn = "";
-    //   if (endX - startX > 50 && Math.abs(endY - startY) < 50) {      //右滑
-    //     turn = "right";
-    //   } else if (endX - startX < -50 && Math.abs(endY - startY) < 50) {   //左滑
-    //     turn = "left";
-    //   }
-    //   return turn;
-    // },
-    getUserInfo: function() {
-        console.log(88)
+    touch(endX,endY){
+        let startX = this.data.touch.x;
+        let startY = this.data.touch.y
+
+        let turn = "";
+        if (endX - startX > 50 && Math.abs(endY - startY) < 50) {      //右滑
+            turn = "right";
+        } else if (endX - startX < -50 && Math.abs(endY - startY) < 50) {   //左滑
+            turn = "left";
+        }
+
+        return turn;
+
     },
 
 

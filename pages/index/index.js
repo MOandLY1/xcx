@@ -9,7 +9,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     list:{},
-    author:''
+    author:'',
+    touch:{
+        x:'',
+        y:''
+      }
   },
 
   onLoad: function () {       //进入页面自动执行的方法
@@ -19,7 +23,7 @@ Page({
     wx.request({
       url: 'https://ly.anjing.live/xcx_index', //仅为示例，并非真实的接口地址
       success (res) {
-        console.log(res.data.data)
+        // console.log(res.data.data)
 
         //数据赋值
         self.setData({
@@ -42,8 +46,9 @@ Page({
       url: '../logs/logs'
     })
   },
+
   touchStart(e) {
-    console.log(e)
+    // console.log(e)
     this.setData({
       "touch.x": e.changedTouches[0].clientX,
       "touch.y": e.changedTouches[0].clientY
@@ -52,21 +57,33 @@ Page({
   touchEnd(e) {
     let x = e.changedTouches[0].clientX;
     let y = e.changedTouches[0].clientY;
+      let a = this.touch(x,y);
+      if(a=='right'){
+
+      }
+
+      if(a=='left'){
+          this.z();
+      }
+
   },
-  // const getTouchData = (endX, endY, startX, startY)=> {
-  //   let turn = "";
-  //   if (endX - startX > 50 && Math.abs(endY - startY) < 50) {      //右滑
-  //     turn = "right";
-  //   } else if (endX - startX < -50 && Math.abs(endY - startY) < 50) {   //左滑
-  //     turn = "left";
-  //   }
-  //   return turn;
-  // },
+  touch(endX,endY){
+    let startX = this.data.touch.x;
+    let startY = this.data.touch.y
+
+        let turn = "";
+        if (endX - startX > 50 && Math.abs(endY - startY) < 50) {      //右滑
+            turn = "right";
+        } else if (endX - startX < -50 && Math.abs(endY - startY) < 50) {   //左滑
+            turn = "left";
+        }
+
+        return turn;
+
+    },
 
 
-  getUserInfo: function() {
-    console.log(88)
-  },
+
 
 
 })

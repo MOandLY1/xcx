@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view bindtouchstart='touchStart' bindtouchend="touchEnd" class="container">
 
     <view class="main">
         <view class="centent">{{list.title}}</view>
